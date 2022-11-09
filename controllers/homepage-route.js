@@ -15,7 +15,7 @@ router.get("/", (req, res) => {
         },
       },
       {
-        model: User,
+        model: Users,
         attributes: ["username"],
       },
     ],
