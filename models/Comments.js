@@ -5,7 +5,6 @@ class Comments extends Model {}
 
 Comments.init(
   {
-    //columns will go here
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
@@ -14,7 +13,6 @@ Comments.init(
     comment_text: {
       type: DataTypes.STRING,
       validate: {
-        // the comment must be at least 3 char long
         len: [3],
       },
     },
