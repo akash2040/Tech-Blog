@@ -1,4 +1,4 @@
-const { Post } = require("../models");
+const { Posts } = require("../models");
 const sequelize = require("../config/connection");
 
 const Datapost = [
@@ -19,5 +19,5 @@ const Datapost = [
   },
 ];
 
-const Postseed = () => Post.bulkCreate(Datapost);
+const Postseed = () => Posts.bulkCreate(Datapost);
 module.exports = Postseed;
